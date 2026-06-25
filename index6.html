@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰山國中校本課程</title>
+    <style>
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+        /* 標頭背景：已換成「校園意象照片.jpg」 */
+        header {
+            background: linear-gradient(rgba(46, 139, 87, 0.7), rgba(0, 0, 0, 0.7)), url('校園意象照片.jpg') center/cover;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        header h1 .en {
+            color: #e0e0e0;
+            font-size: 0.5em;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+        header h2 {
+            font-size: 1.3em;
+            font-weight: normal;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+        header h2 .en {
+            color: #ccc;
+            font-size: 0.7em;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-wrapper {
+            margin-bottom: 60px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            color: #2e8b57;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2e8b57;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title .en {
+            font-size: 0.5em;
+            color: #8fbc8f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* 區塊一：校園景觀與特色 (第一版樣式) */
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .feature-card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .feature-card div {
+            flex: 1;
+        }
+        .feature-card h3 {
+            color: #d35400;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+
+        /* 區塊二：在地特色 (新增區塊樣式) */
+        .local-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .local-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #2e8b57;
+            font-size: 1.3em;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+            display: block;
+        }
+        .local-card:hover {
+            transform: translateY(-5px);
+            background-color: #2e8b57;
+            color: white;
+        }
+        .local-card span {
+            display: block;
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+        .local-card:hover span {
+            color: #f4f9f4;
+        }
+
+        /* 區塊三：課程子題探索樣式 */
+        .course-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .course-nav a {
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px 40px;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .course-nav a:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 網頁標題區 -->
+    <header>
+        <h1>泰山國中校本課程</h1>
+        <h2>平頂山腳書香盛，大窼溪畔樂輕揚<br>勇登泰山小天下，修德勵學Fun心遊</h2>
+    </header>
+
+    <div class="container">
+        
+        <!-- 區塊一：校園景觀與特色 (保留第一版文字內容與結構) -->
+        <div class="section-wrapper">
+            <div style="text-align: center;">
+                <h2 class="section-title">校園景觀與特色</h2>
+            </div>
+            <div class="features">
+                <!-- 特色一：讀取 44254_0.jpg -->
+                <div class="feature-card">
+                    <img src="44254_0.jpg" alt="活力操場">
+                    <div>
+                        <h3>平頂山腳的活力操場</h3>
+                        <p>學校擁有被青翠山林環抱的廣闊運動空間。紅綠相間的操場旁矗立著茂密的大榕樹，讓學生在運動流汗之餘，也能在綠意盎然的樹蔭下乘涼休憩，展現充滿活力的校園風貌。</p>
+                    </div>
+                </div>
+
+                <!-- 特色二：讀取 44290_0.jpg -->
+                <div class="feature-card">
+                    <img src="44290_0.jpg" alt="生態庭園">
+                    <div>
+                        <h3>書香盛的生態庭園</h3>
+                        <p>校園內設有靜謐的圓形生態水池，中央聳立著雅致的假山石景，池畔點綴著古樸的陶甕。在洗石子走廊旁的綠意庭園中，提供學子一個沉澱心靈、修德勵學的絕佳環境。</p>
+                    </div>
+                </div>
+
+                <!-- 特色三：讀取 44291_0.jpg -->
+                <div class="feature-card">
+                    <img src="44291_0.jpg" alt="藝術校園">
+                    <div>
+                        <h3>Fun心遊的藝術校園</h3>
+                        <p>校園建築的每個角落都充滿巧思！穿堂柱面上有著童趣的「愛麗絲夢遊仙境」撲克牌彩繪，操場旁更有著生動的撐傘紳士及3D藝術壁畫，為日常學習生活注入滿滿的創意與想像力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 區塊二：在地特色 (置於中間) -->
+        <div class="section-wrapper">
+            <div style="text-align: center;">
+                <h2 class="section-title">在地特色</h2>
+            </div>
+            <div class="local-features">
+                <a href="pingdingshan.html" class="local-card">
+                    平頂山
+                    <span>（山林環抱的校園）</span>
+                </a>
+                <a href="dakecreek.html" class="local-card">
+                    大窼溪
+                    <span>（溪水潺潺伴讀書）</span>
+                </a>
+                <a href="scholarly.html" class="local-card">
+                    書香校園
+                    <span>（修德勵學樂成長）</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 區塊三：課程子題探索 (移至底部) -->
+        <div class="section-wrapper">
+            <div style="text-align: center;">
+                <h2 class="section-title">課程子題探索</h2>
+            </div>
+            <div class="course-nav">
+                <a href="chinese.html">國文</a>
+                <a href="english.html">英文</a>
+                <a href="math.html">數學</a>
+                <a href="science.html">自然</a>
+                <a href="social.html">社會</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 泰山國中校本課程專網. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+網頁主架構已經依據您的需求完成設定，接下來，您需要我為您開始規劃「在地特色」或是「課程子題探索」中個別子頁面的內容嗎？

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰山國中校本課程</title>
+    <style>
+        /* 全局樣式設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            background-color: #f4f9f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 頂部橫幅區塊 */
+        header {
+            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(21, 101, 192, 0.8)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        /* 學校特色與景觀介紹區 */
+        .intro-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro-section h3 {
+            color: #2e7d32;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* 圖片展示區 (可自行替換為泰山國中實景) */
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        /* 五大領域連結區 */
+        .curriculum-section {
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+        .curriculum-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* 連結卡片設計 */
+        .subject-card {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            width: 200px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .subject-card:hover {
+            border-color: #2e7d32;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(46, 125, 50, 0.2);
+            background-color: #f1f8e9;
+        }
+
+        .subject-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #1565c0;
+        }
+
+        .subject-card h4 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #2e7d32;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>泰山國中校本課程</h1>
+        <h2>「平頂山腳書香盛，大窼溪畔樂輕揚<br>勇登泰山小天下，修德勵學Fun心遊」</h2>
+    </header>
+
+    <section class="intro-section">
+        <h3>校園特色與景觀</h3>
+        <p>依傍著平頂山與大窼溪，泰山國中擁有得天獨厚的自然生態環境。我們結合在地地景與人文歷史，打造獨具特色的校本課程，帶領學生走出教室，在自然中探索，在體驗中學習。</p>
+        
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="泰山國中校園景觀 1">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="泰山國中校園景觀 2">
+        </div>
+    </section>
+
+    <section class="curriculum-section">
+        <h3 style="text-align: center; color: #2e7d32; font-size: 2rem; margin-bottom: 40px;">課程子題探索</h3>
+        <div class="curriculum-container">
+            
+            <a href="#chinese" class="subject-card">
+                <div class="subject-icon">📖</div>
+                <h4>國文</h4>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">書香盛閱</p>
+            </a>
+
+            <a href="#english" class="subject-card">
+                <div class="subject-icon">🌍</div>
+                <h4>英文</h4>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">國際視野</p>
+            </a>
+
+            <a href="#math" class="subject-card">
+                <div class="subject-icon">📐</div>
+                <h4>數學</h4>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">邏輯思辨</p>
+            </a>
+
+            <a href="#science" class="subject-card">
+                <div class="subject-icon">🌿</div>
+                <h4>自然</h4>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">生態探索</p>
+            </a>
+
+            <a href="#social" class="subject-card">
+                <div class="subject-icon">🗺️</div>
+                <h4>社會</h4>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">人文史地</p>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 新北市立泰山國民中學 校本課程. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

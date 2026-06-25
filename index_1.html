@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰山國中校本課程</title>
+    <style>
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(46, 139, 87, 0.8), rgba(46, 139, 87, 0.9)), url('https://via.placeholder.com/1200x400?text=Taishan+Junior+High+School') center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        header h2 {
+            font-size: 1.4em;
+            font-weight: normal;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-wrapper {
+            margin-bottom: 60px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            color: #2e8b57;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2e8b57;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        /* 區塊一：校園特色與景觀 */
+        .intro-text {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            font-size: 1.2em;
+            text-align: center;
+            color: #555;
+            border-left: 5px solid #2e8b57;
+        }
+
+        /* 區塊二：在地特色 (圖片卡片樣式) */
+        .local-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .local-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .local-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .local-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .local-card-content {
+            padding: 20px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+        .local-card:hover .local-card-content {
+            background-color: #2e8b57;
+            color: white;
+        }
+        .local-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.4em;
+            color: inherit;
+        }
+        .local-card p {
+            margin: 0;
+            font-size: 1em;
+            color: inherit;
+            opacity: 0.9;
+        }
+
+        /* 區塊三：課程子題探索 */
+        .course-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .course-card {
+            background-color: white;
+            color: #2e8b57;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px 30px;
+            border-radius: 15px;
+            border: 2px solid #e67e22;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            min-width: 120px;
+        }
+        .course-card h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.4em;
+            color: #d35400;
+        }
+        .course-card span {
+            font-size: 1em;
+            color: #666;
+        }
+        .course-card:hover {
+            background-color: #e67e22;
+            color: white;
+            transform: scale(1.05);
+        }
+        .course-card:hover h4, .course-card:hover span {
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 網頁標題區 -->
+    <header>
+        <h1>泰山國中校本課程</h1>
+        <h2>「平頂山腳書香盛，大窼溪畔樂輕揚<br>勇登泰山小天下，修德勵學Fun心遊」</h2>
+    </header>
+
+    <div class="container">
+        
+        <!-- 區塊一：校園特色與景觀 (結合 PDF 內容) -->
+        <div class="section-wrapper">
+            <div style="text-align: center;">
+                <h2 class="section-title">校園特色與景觀</h2>
+            </div>
+            <div class="intro-text">
+                <p>依傍著平頂山與大窼溪，泰山國中擁有得天獨厚的自然生態環境。<br>我們結合在地地景與人文歷史，打造獨具特色的校本課程，帶領學生走出教室，在自然中探索，在體驗中學習。</p>
+            </div>
+        </div>
+
+        <!-- 區塊二：在地特色 (以圖片呈現並連結至子分頁) -->
+        <div class="section-wrapper">
+            <div style="text-align: center;">
+                <h2 class="section-title">在地特色</h2>
+            </div>
+            <div class="local-features">
+                <!-- 在地特色 1: 平頂山 -->
+                <a href="pingdingshan.html" class="local-card">
+                    <img src="44254_0.jpg" alt="平頂山">
+                    <div class="local-card-content">
+                        <h3>平頂山</h3>
+                        <p>山林環抱的校園</p>
+                    </div>
+                </a>
+
+                <!-- 在地特色 2: 大窼溪 -->
+                <a href="dakecreek.html" class="local-card">
+                    <img src="44289_0.jpg" alt="大窼溪">
+                    <div class="local-card-content">
+                        <h3>大窼溪</h3>
+                        <p>溪水潺潺伴讀書</p>
+                    </div>
+                </a>
+
+                <!-- 在地特色 3: 書香校園 -->
+                <a href="scholarly.html" class="local-card">
+                    <img src="44290_0.jpg" alt="書香校園">
+                    <div class="local-card-content">
+                        <h3>書香校園</h3>
+                        <p>修德勵學樂成長</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 區塊三：課程子題探索 (結合 PDF 內容) -->
+        <div class="section-wrapper">
+            <div style="text-align: center;">
+                <h2 class="section-title">課程子題探索</h2>
+            </div>
+            <div class="course-nav">
+                <a href="chinese.html" class="course-card">
+                    <h4>國文</h4>
+                    <span>📖 書香盛閱</span>
+                </a>
+                <a href="english.html" class="course-card">
+                    <h4>英文</h4>
+                    <span>🌍 國際視野</span>
+                </a>
+                <a href="math.html" class="course-card">
+                    <h4>數學</h4>
+                    <span>📐 邏輯思辨</span>
+                </a>
+                <a href="science.html" class="course-card">
+                    <h4>自然</h4>
+                    <span>🌿 生態探索</span>
+                </a>
+                <a href="social.html" class="course-card">
+                    <h4>社會</h4>
+                    <span>🗺 人文史地</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2026 新北市立泰山國民中學 校本課程. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+這樣一來，首頁的視覺體驗將會大幅提升！接下來，您希望我們針對哪一個「課程子題」（例如：國文、英文、數學...等）開始規劃它的說明分頁呢？
